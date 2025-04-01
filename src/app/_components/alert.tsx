@@ -6,6 +6,7 @@ type Props = {
   preview?: boolean;
 };
 
+// デフォルトで存在する画面上部に情報を表示するためのコンポーネント
 const Alert = ({ preview }: Props) => {
   return (
     <div
