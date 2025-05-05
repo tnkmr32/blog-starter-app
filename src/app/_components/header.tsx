@@ -1,13 +1,13 @@
 import { SITE_NAME } from "@/lib/constants";
-import Link from "next/link";
 import { Bars3Icon } from "@heroicons/react/24/solid";
+import Link from "./link";
 
 const Header = () => {
   return (
     <div className="p-sm shadow-md">
       <h2>
         <div className="flex flex-row items-center justify-between">
-          <Link href="/" className="text-base hover:underline">
+          <Link href="/" className="text-base">
             {SITE_NAME}
           </Link>
           {/* TODO: ボタンタップでメニュー表示 */}
