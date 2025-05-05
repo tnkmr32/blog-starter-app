@@ -11,8 +11,8 @@ const config: Config = {
     spacing: {
       sm: "8px",
       md: "16px",
-      lg: "20px",
-      xl: "24px",
+      lg: "24px",
+      xl: "32px",
     },
     fontSize: {
       sm: "12px",
@@ -22,19 +22,13 @@ const config: Config = {
     colors: {
       base: "#482700",
       accent: "#2B24FF",
+      white: "#FFFFFF",
     },
     extend: {
       backgroundImage: {
         "gradient-radial": "radial-gradient(var(--tw-gradient-stops))",
         "gradient-conic":
           "conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))",
-      },
-      colors: {
-        "accent-1": "#FAFAFA",
-        "accent-2": "#EAEAEA",
-        "accent-7": "#333",
-        success: "#0070f3",
-        cyan: "#79FFE1",
       },
       letterSpacing: {
         tighter: "-.04em",
