@@ -8,4 +8,11 @@
 
 body {
   font-family: var(--font-noto-sans-jp);
+  font-size: theme(fontSize[md]);
+  font-weight: 400;
+}
+
+h2 {
+  font-size: theme(fontSize[lg]);
+  font-weight: 700;
 }

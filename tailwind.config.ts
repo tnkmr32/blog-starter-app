@@ -9,10 +9,10 @@ const config: Config = {
   ],
   theme: {
     spacing: {
-      "sm": "8px",
-      "md": "16px",
-      "lg": "20px",
-      "xl": "24px",
+      sm: "8px",
+      md: "16px",
+      lg: "20px",
+      xl: "24px",
     },
     fontSize: {
       sm: "12px",
@@ -40,8 +40,7 @@ const config: Config = {
         tighter: "-.04em",
       },
       boxShadow: {
-        sm: "0 5px 10px rgba(0, 0, 0, 0.12)",
-        md: "0 8px 30px rgba(0, 0, 0, 0.12)",
+        md: "0px 5px 10px rgba(0, 0, 0, 0.1)",
       },
     },
   },
