@@ -1,9 +1,17 @@
+import classNames from "classnames";
+
 type Props = {
+  className?: string;
   children?: React.ReactNode;
 };
 
-const Container = ({ children }: Props) => {
-  return <div className="container mx-auto max-w-5xl px-10">{children}</div>;
+const Container = (props: Props) => {
+  return (
+    // TODO: レスポンシブ対応の＠mediaを設定する
+    <div className={classNames("px-sm flex flex-col gap-sm", props.className)}>
+      {props.children}
+    </div>
+  );
 };
 
 export default Container;
