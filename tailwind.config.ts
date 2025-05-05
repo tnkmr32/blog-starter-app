@@ -8,6 +8,21 @@ const config: Config = {
     "./src/app/**/*.{js,ts,jsx,tsx,mdx}",
   ],
   theme: {
+    spacing: {
+      "sm": "8px",
+      "md": "16px",
+      "lg": "20px",
+      "xl": "24px",
+    },
+    fontSize: {
+      sm: "12px",
+      md: "16px",
+      lg: "20px",
+    },
+    colors: {
+      base: "#482700",
+      accent: "#2B24FF",
+    },
     extend: {
       backgroundImage: {
         "gradient-radial": "radial-gradient(var(--tw-gradient-stops))",
@@ -21,17 +36,8 @@ const config: Config = {
         success: "#0070f3",
         cyan: "#79FFE1",
       },
-      spacing: {
-        28: "7rem",
-      },
       letterSpacing: {
         tighter: "-.04em",
-      },
-      fontSize: {
-        "5xl": "2.5rem",
-        "6xl": "2.75rem",
-        "7xl": "4.5rem",
-        "8xl": "6.25rem",
       },
       boxShadow: {
         sm: "0 5px 10px rgba(0, 0, 0, 0.12)",
