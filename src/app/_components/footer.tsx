@@ -1,7 +1,7 @@
 import Container from "@/app/_components/container";
 import Link from "./link";
 
-export function Footer() {
+function Footer() {
   return (
     <footer className="bg-base text-white">
       <Container className="items-center py-xl text-sm">
