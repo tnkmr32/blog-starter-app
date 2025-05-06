@@ -18,7 +18,7 @@ function BlogItem({ imgSrc, title, date }: Props) {
         height={60}
         className="flex-shrink-0"
       />
-      <div className="w-full">
+      <div className="w-full flex flex-col justify-between">
         <p className="line-clamp-2">{title}</p>
         <div className="text-sm text-grey">{date}</div>
       </div>
