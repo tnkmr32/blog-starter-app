@@ -13,6 +13,7 @@ const config: Config = {
       md: "16px",
       lg: "24px",
       xl: "32px",
+      none: "0px",
     },
     fontSize: {
       sm: "12px",
@@ -23,6 +24,7 @@ const config: Config = {
       base: "#482700",
       accent: "#2B24FF",
       white: "#FFFFFF",
+      grey: "#D9D9D9",
     },
     extend: {
       backgroundImage: {
