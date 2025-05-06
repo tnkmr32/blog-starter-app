@@ -7,10 +7,10 @@ type Props = {
   children?: React.ReactNode | undefined;
 };
 
-const Link = (props: Props) => {
+const Link = ({href, className, children}: Props) => {
   return (
-    <NextLink href={props.href} className={classNames("hover:underline", props.className)}>
-      {props.children}
+    <NextLink href={href} className={classNames("hover:underline", className)}>
+      {children}
     </NextLink>
   );
 };
