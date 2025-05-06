@@ -24,7 +24,7 @@ const config: Config = {
       base: "#482700",
       accent: "#2B24FF",
       white: "#FFFFFF",
-      grey: "#D9D9D9",
+      grey: "#BFBFBF",
     },
     extend: {
       backgroundImage: {
