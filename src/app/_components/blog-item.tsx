@@ -9,7 +9,7 @@ type Props = {
 
 function BlogItem({ imgSrc, title, date }: Props) {
   return (
-    <div className="w-[300px] h-max flex flex-row gap-sm shadow-md p-sm rounded-md">
+    <div className="w-[300px] h-max flex flex-row gap-sm shadow-sm p-sm rounded-md">
       {/* TODO: imgSrcを適応する修正 */}
       <Image
         src={blogPic}

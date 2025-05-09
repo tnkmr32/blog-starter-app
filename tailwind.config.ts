@@ -36,6 +36,7 @@ const config: Config = {
         tighter: "-.04em",
       },
       boxShadow: {
+        sm: "0px 3px 5px rgba(0, 0, 0, 0.1)",
         md: "0px 5px 10px rgba(0, 0, 0, 0.1)",
       },
     },
