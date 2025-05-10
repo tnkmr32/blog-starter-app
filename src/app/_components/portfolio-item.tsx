@@ -1,9 +1,11 @@
 import { title } from "process";
 
 import Image from "next/image";
+import Link from "next/link";
 
 type Props = {
   title: string;
+  slug: string;
   src: string;
 };
 
@@ -17,9 +19,16 @@ function PortfolioItem(props: Props) {
     />
   );
   return (
-    <div className="w-[240px] h-[160px] bg-grey relative flex-shrink-0">
-      <div className="absolute bottom-none right-none px-sm">{props.title}</div>
-    </div>
+    <Link href={`/portfolio/${props.slug}`} key={props.slug}>
+      <div
+        className="w-[240px] h-[160px] bg-grey relative flex-shrink-0"
+        
+      >
+        <div className="absolute bottom-none right-none px-sm">
+          {props.title}
+        </div>
+      </div>
+    </Link>
   );
 }
 

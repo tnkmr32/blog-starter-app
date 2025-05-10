@@ -2,29 +2,22 @@ import Container from "@/app/_components/container";
 import { HeroPost } from "@/app/_components/hero-post";
 import { Intro } from "@/app/_components/intro";
 import { MoreStories } from "@/app/_components/more-stories";
-import { getAllPosts } from "@/lib/api";
+import { getAllPortfolios, getAllPosts } from "@/lib/api";
 import PortfolioItem from "./_components/portfolio-item";
-import Link from "./_components/link";
 import BlogItem from "./_components/blog-item";
 import LinkBlue from "./_components/link-blue";
 
 export default function Index() {
-  const allPosts = getAllPosts();
+  const allPortfolios = getAllPortfolios();
 
-  const heroPost = allPosts[0];
-
-  const morePosts = allPosts.slice(1);
+  console.log(allPortfolios);
+  
 
   return (
     <main>
       <div className="overflow-x-auto">
         <div className="flex gap-sm p-sm w-max">
-          {/* TODO: 配列で受け取って一覧表示にする */}
-          <PortfolioItem title={"AAAA"} src={""} />
-          <PortfolioItem title={"BBB"} src={""} />
-          <PortfolioItem title={"AAAA"} src={""} />
-          <PortfolioItem title={"AAAA"} src={""} />
-          <PortfolioItem title={"AAAA"} src={""} />
+          {allPortfolios.map((portfolio)=>{return <PortfolioItem title={portfolio.title} src={""} slug={portfolio.slug} />})}
         </div>
       </div>
       <Container>

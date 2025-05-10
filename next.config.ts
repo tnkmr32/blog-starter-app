@@ -7,6 +7,10 @@ const nextConfig: NextConfig = {
         pathname: "/public/assets/**",
         search: "",
       },
+      {
+        pathname: "/assets/**",
+        search: "",
+      },
     ],
   },
 };
