@@ -2,7 +2,7 @@ import Container from "@/app/_components/container";
 import { HeroPost } from "@/app/_components/hero-post";
 import { Intro } from "@/app/_components/intro";
 import { MoreStories } from "@/app/_components/more-stories";
-import { getAllPortfolios, getAllPosts } from "@/lib/api";
+import { getAllPortfolios } from "@/lib/api";
 import PortfolioItem from "./_components/portfolio-item";
 import BlogItem from "./_components/blog-item";
 import LinkBlue from "./_components/link-blue";
@@ -17,7 +17,7 @@ export default function Index() {
     <main>
       <div className="overflow-x-auto">
         <div className="flex gap-sm p-sm w-max">
-          {allPortfolios.map((portfolio)=>{return <PortfolioItem title={portfolio.title} src={""} slug={portfolio.slug} />})}
+          {allPortfolios.map((portfolio)=>{return <PortfolioItem title={portfolio.title} src={portfolio.coverImage} slug={portfolio.slug} key={portfolio.slug}/>})}
         </div>
       </div>
       <Container>

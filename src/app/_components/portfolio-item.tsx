@@ -19,13 +19,11 @@ function PortfolioItem(props: Props) {
     />
   );
   return (
-    <Link href={`/portfolio/${props.slug}`} key={props.slug}>
-      <div
-        className="w-[240px] h-[160px] bg-grey relative flex-shrink-0"
-        
-      >
-        <div className="absolute bottom-none right-none px-sm">
-          {props.title}
+    <Link href={`/portfolio/${props.slug}`}>
+      <div className="w-[240px] h-[160px] relative flex-shrink-0 shadow-sm ">
+        {image}
+        <div className="absolute bottom-none right-none px-sm pb-sm">
+          <p className="text-outline-white text-white">{props.title}</p>
         </div>
       </div>
     </Link>

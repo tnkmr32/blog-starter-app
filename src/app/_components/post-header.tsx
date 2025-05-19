@@ -15,11 +15,11 @@ export function PostHeader({ title, coverImage, date, author }: Props) {
   return (
     <>
       <PostTitle>{title}</PostTitle>
-      <div className="mb-6 text-lg flex items-center">
-        <ClockIcon className="size-6 mr-1" />
+      <div className="mb-sm flex items-center">
+        <ClockIcon className="size-md mr-sm" />
         <DateFormatter dateString={date} />
       </div>
-      <div className="mb-8 md:mb-16 sm:mx-0">
+      <div className="mb-sm md:mb-16 sm:mx-0">
         <CoverImage title={title} src={coverImage} />
       </div>
     </>

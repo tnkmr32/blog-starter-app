@@ -7,8 +7,8 @@ const Header = () => {
     <div className="p-sm shadow-md">
       <h2>
         <div className="flex flex-row items-center justify-between">
-          <Link href="/" className="text-base hover:underline">
-            <p>{SITE_NAME}</p>
+          <Link href="/" className="hover:underline">
+            <p className="text-base">{SITE_NAME}</p>
           </Link>
           {/* TODO: ボタンタップでメニュー表示 */}
           <Bars3Icon className="size-md" />

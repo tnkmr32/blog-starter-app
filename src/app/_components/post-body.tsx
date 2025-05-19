@@ -7,7 +7,7 @@ type Props = {
 export function PostBody({ content }: Props) {
   return (
     <div className="flex justify-center">
-      <div className="max-w-2xl">
+      <div className="max-w-md">
         <div
           className={markdownStyles["markdown"]}
           dangerouslySetInnerHTML={{ __html: content }}
